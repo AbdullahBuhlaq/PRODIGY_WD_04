@@ -1,0 +1,26 @@
+.experience-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+
+/* ======= media md ========================================= */
+
+@media screen and (max-width: 1024px) {
+    .experience-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+
+/* ======= media sm ========================================= */
+
+@media screen and (max-width: 600px) {
+    .experience-container {
+        gap: 1rem;
+    }
+
+}

@@ -1,0 +1,54 @@
+.site-options {
+    position: absolute;
+    padding: 10px;
+}
+
+.site-options div {
+    position: relative;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-blur);
+    backdrop-filter: blur(20px);
+    border-radius: 50%;
+    padding: 0.5rem;
+    overflow: hidden;
+}
+
+.site-options-icon {
+    position: absolute;
+    cursor: pointer;
+}
+
+.site-options-icon.moon {
+    color: #2b4578;
+}
+
+.site-options-icon.sun {
+    color: #f8f05e;
+}
+
+.site-options .sun.show {
+    transform: rotate(0deg);
+    transition: all 1s ease;
+}
+
+.site-options .sun.hidden {
+    transform: rotate(90deg);
+    transform-origin: 50% 200%;
+    transition: all 1s ease;
+}
+
+.site-options .moon.show {
+    transform: rotate(0deg);
+    transition: all 1s ease;
+}
+
+.site-options .moon.hidden {
+    transform: rotate(-90deg);
+    transform-origin: 50% 200%;
+    transition: all 1s ease;
+}

@@ -1,0 +1,15 @@
+.about-container {
+    display: grid;
+    grid-template-columns: 35% 50%;
+    gap: 15%;
+}
+
+
+/* ======= media md ========================================= */
+
+@media screen and (max-width: 1024px) {
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
