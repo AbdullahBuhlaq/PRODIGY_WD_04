@@ -32,7 +32,7 @@
 .light:root {
     /* colors */
     --color-bg: #f3fbff;
-    --color-bg-variant: #d5fff3;
+    --color-bg-variant: rgb(213, 243, 255);
     --color-primary: #1672b3;
     --color-primary-variant: #2c2c6c;
     --color-white: #262626;
