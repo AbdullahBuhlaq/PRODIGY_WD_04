@@ -5,19 +5,19 @@ import { FaTelegram } from "react-icons/fa6";
 
 const SOCIAL_MEDIA = [
   {
-    href: "facebook.com",
+    href: "https://www.facebook.com/abdullah.buhlaq.1",
     icon: <FaFacebook />,
   },
   {
-    href: "facebook.com",
+    href: "https://twitter.com/3bdullaBu7la8",
     icon: <FaSquareXTwitter />,
   },
   {
-    href: "facebook.com",
+    href: "https://t.me/Abdullah_Buhlaq",
     icon: <FaTelegram />,
   },
   {
-    href: "facebook.com",
+    href: "https://www.linkedin.com/in/abdullah-buhlaq-a5245028a/",
     icon: <BsLinkedin />,
   },
 ];

@@ -1,7 +1,8 @@
 import DICTIONARY from "../../data/dictionary/Dictionary";
 import AboutCard from "./AboutCard";
-import { BsLinkedin } from "react-icons/bs";
 import "./style/AboutCards.css";
+import ABOUT_CARDS from "./data/aboutCards";
+import Button from "../../components/form/button/Button";
 
 function AboutCards(props) {
   try {
@@ -9,12 +10,13 @@ function AboutCards(props) {
       <>
         <div className="about-content">
           <div className="about-cards">
-            <AboutCard title={DICTIONARY[props.language]["Experience"]} value={DICTIONARY[props.language]["+3 years working"]} icon={<BsLinkedin className="about-icon" />} />
-            <AboutCard title={DICTIONARY[props.language]["Clients"]} value={DICTIONARY[props.language]["+200 Worldwide"]} icon={<BsLinkedin className="about-icon" />} />
-            <AboutCard title={DICTIONARY[props.language]["Projects"]} value={DICTIONARY[props.language]["+80 combleted"]} icon={<BsLinkedin className="about-icon" />} />
+            {ABOUT_CARDS.map((item, index) => {
+              return <AboutCard key={index} title={DICTIONARY[props.language][item.title]} value={DICTIONARY[props.language][item.value]} icon={item.icon} />;
+            })}
           </div>
 
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, vero esse! Quod accusantium quibusdam recusandae, error, ad, maiores at adipisci alias pariatur facilis in nulla laborum asperiores voluptas doloribus beatae.</p>
+          <Button href={"#contact"} content={DICTIONARY[props.language]["lets talk"]} />
         </div>
       </>
     );

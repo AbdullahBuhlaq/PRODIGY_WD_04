@@ -15,8 +15,6 @@ function About(props) {
           <div className="container about-container">
             <AboutMe />
             <AboutCards language={props.language} />
-
-            <Button href={"#contact"} content={DICTIONARY[props.language]["lets talk"]} />
           </div>
         </section>
       </>
