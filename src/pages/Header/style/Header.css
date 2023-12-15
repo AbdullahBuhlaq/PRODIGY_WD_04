@@ -11,7 +11,7 @@ header {
 }
 
 .header-container h1 {
-    width: max-content;
+    white-space: nowrap;
 }
 
 

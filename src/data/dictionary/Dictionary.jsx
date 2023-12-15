@@ -24,6 +24,8 @@ const DICTIONARY = {
     Portfolio: "Portfolio",
     "Get In Touch": "Get In Touch",
     "Contact Me": "Contact Me",
+    "Languages & Frameworks": "Languages & Frameworks",
+    "Develpment Tools": "Develpment Tools",
   },
   ar: {
     hello: "مرحبا",
@@ -50,6 +52,8 @@ const DICTIONARY = {
     Portfolio: "Portfolio",
     "Get In Touch": "Get In Touch",
     "Contact Me": "Contact Me",
+    "Languages & Frameworks": "Languages & Frameworks",
+    "Develpment Tools": "Develpment Tools",
   },
 };
 

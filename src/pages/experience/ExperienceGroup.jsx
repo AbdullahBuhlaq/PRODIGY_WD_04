@@ -1,4 +1,3 @@
-import { BsLinkedin } from "react-icons/bs";
 import ExperienceCard from "./ExperienceCard";
 import "./style/ExperienceGroup.css";
 
@@ -9,11 +8,9 @@ function ExperienceGroup(props) {
         <div>
           <h3>{props.title}</h3>
           <div className="experience-content">
-            <ExperienceCard title={"HTML"} value={"Experienced"} icon={<BsLinkedin className={"experience-details-icon"} />} />
-            <ExperienceCard title={"HTML"} value={"Experienced"} icon={<BsLinkedin className={"experience-details-icon"} />} />
-            <ExperienceCard title={"HTML"} value={"Experienced"} icon={<BsLinkedin className={"experience-details-icon"} />} />
-            <ExperienceCard title={"HTML"} value={"Experienced"} icon={<BsLinkedin className={"experience-details-icon"} />} />
-            <ExperienceCard title={"HTML"} value={"Experienced"} icon={<BsLinkedin className={"experience-details-icon"} />} />
+            {props.items.map((item, index) => {
+              return <ExperienceCard key={index} title={item.title} value={item.value} icon={item.icon} />;
+            })}
           </div>
         </div>
       </>
