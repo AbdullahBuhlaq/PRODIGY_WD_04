@@ -1,0 +1,26 @@
+.achievements-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+}
+
+
+
+/* ======= media md ========================================= */
+
+@media screen and (max-width: 750px) {
+    .achievements-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+
+/* ======= media sm ========================================= */
+
+/* @media screen and (max-width: 600px) {
+    .achievements-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+} */

@@ -15,6 +15,8 @@ import Header from "./pages/Header/Header";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import SiteOptions from "./components/layout/siteOptions/SiteOptions";
+import Certificates from "./pages/certificates/Certificates";
+import Achievements from "./pages/achievements/Achievements";
 
 function App() {
   try {
@@ -37,6 +39,8 @@ function App() {
         <Header language={language} />
         <Navbar />
         <About language={language} />
+        <Certificates language={language} />
+        <Achievements language={language} />
         <Experience language={language} />
         <Services language={language} />
         <Portfolio language={language} />

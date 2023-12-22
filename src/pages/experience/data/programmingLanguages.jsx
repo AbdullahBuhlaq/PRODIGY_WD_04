@@ -1,4 +1,4 @@
-import { FaHtml5, FaCss3Alt, FaBootstrap, FaPython, FaReact, FaJava } from "react-icons/fa6";
+import { FaHtml5, FaCss3Alt, FaBootstrap, FaPython, FaReact, FaNodeJs, FaJava } from "react-icons/fa6";
 import { BiLogoTailwindCss, BiLogoJavascript, BiLogoJquery } from "react-icons/bi";
 import { SiCsharp, SiCplusplus, SiDjango, SiSqlite, SiMongodb } from "react-icons/si";
 import { TbSquareLetterM, TbBrandMysql } from "react-icons/tb";
@@ -29,6 +29,11 @@ const PROGRAMMING_LANGUAGES = [
     title: "JavaScript",
     value: "Experienced",
     icon: <BiLogoJavascript className={"experience-details-icon"} />,
+  },
+  {
+    title: "NodeJs",
+    value: "Experienced",
+    icon: <FaNodeJs className={"experience-details-icon"} />,
   },
   {
     title: "ReactJs",

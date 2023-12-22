@@ -8,7 +8,7 @@ function Tab(props) {
           <a href={props.href} className={props.currentSection == props.href ? " active" : ""} onClick={() => props.setCurrentSection(props.href)}>
             {props.icon}
           </a>
-          <span>{props.title}</span>
+          <span className={props.currentSection == props.href ? "" : " text-light"}>{props.title}</span>
         </div>
       </>
     );
