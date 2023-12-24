@@ -1,7 +1,6 @@
 import { IoHome } from "react-icons/io5";
 import { IoPersonCircle } from "react-icons/io5";
-import { GiSkills, GiAchievement } from "react-icons/gi";
-import { GrServices } from "react-icons/gr";
+import { GiSkills, GiAchievement, GiBookshelf } from "react-icons/gi";
 import { MdOutlineWork } from "react-icons/md";
 import { GrContact } from "react-icons/gr";
 import { BsFillAwardFill } from "react-icons/bs";
@@ -29,14 +28,19 @@ const TABS = [
   },
   {
     href: "#experience",
-    icon: <GiSkills />,
+    icon: <GiBookshelf />,
     title: "Experience",
   },
   {
-    href: "#services",
-    icon: <GrServices />,
-    title: "Services",
+    href: "#skills",
+    icon: <GiSkills />,
+    title: "Skills",
   },
+  // {
+  //   href: "#services",
+  //   icon: <GrServices />,
+  //   title: "Services",
+  // },
   {
     href: "#portfolio",
     icon: <MdOutlineWork />,

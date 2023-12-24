@@ -96,6 +96,7 @@
     transition: all 600ms ease-in-out;
     font-size: 6rem;
     color: goldenrod;
+    filter: drop-shadow(0px 0px 3px var(--color-black));
 }
 
 .achievement-item:hover .achievement-icon {
@@ -111,7 +112,7 @@
     opacity: .5;
     transform: translateY(-140%);
     transition: all 600ms ease-in-out;
-    filter: drop-shadow(0px 0px 5px black);
+    background-color: rgba(0, 0, 0, .7);
     cursor: pointer;
 }
 

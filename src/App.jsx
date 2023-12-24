@@ -17,6 +17,7 @@ import "react-toastify/dist/ReactToastify.css";
 import SiteOptions from "./components/layout/siteOptions/SiteOptions";
 import Certificates from "./pages/certificates/Certificates";
 import Achievements from "./pages/achievements/Achievements";
+import Skills from "./pages/skills/Skills";
 
 function App() {
   try {
@@ -42,7 +43,8 @@ function App() {
         <Certificates language={language} />
         <Achievements language={language} />
         <Experience language={language} />
-        <Services language={language} />
+        <Skills language={language} />
+        {/* <Services language={language} /> */}
         <Portfolio language={language} />
         <Contact language={language} toast={toast} />
         <Testimonials language={language} />

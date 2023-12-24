@@ -30,7 +30,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    background: linear-gradient(45deg, var(--color-bg-variant) 60%, transparent 60%);
+    background: linear-gradient(45deg, var(--color-bg-variant) 50%, rgba(0, 0, 0, .7) 50%, transparent 55%);
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -56,8 +56,9 @@
     position: absolute;
     top: .5rem;
     left: .5rem;
-    font-size: 3rem;
+    font-size: 4rem;
     color: goldenrod;
+    filter: drop-shadow(0px 0px 3px var(--color-black));
 }
 
 .open-certificate-image {
@@ -68,7 +69,7 @@
     opacity: .5;
     transform: translateY(-140%);
     transition: all 600ms ease-in-out;
-    filter: drop-shadow(0px 0px 5px black);
+    background-color: rgba(0, 0, 0, .7);
     cursor: pointer;
 }
 

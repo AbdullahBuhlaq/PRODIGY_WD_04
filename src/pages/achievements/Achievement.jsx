@@ -1,6 +1,7 @@
 import "./style/Achievement.css";
 import { BsFullscreen } from "react-icons/bs";
 import { GiAchievement } from "react-icons/gi";
+import getTriangleText from "../../utils/getTriangleText";
 
 function Achievement(props) {
   try {
@@ -14,8 +15,10 @@ function Achievement(props) {
           <div className="top-triangle"></div>
           <div className="bottom-triangle"></div>
           <div className="achievement-details">
-            <div className="achievement-name">Lorem ipsum dolor sit amet consectetur.</div>
-            <div className="achievement-describe text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente repellendus repudiandae doloremque ducimus porro ratione!</div>
+            <div className="achievement-name">{props.item.name}</div>
+            <div className="achievement-describe text-light">
+              <pre>{getTriangleText(props.item.describe, 35, 5)}</pre>
+            </div>
           </div>
           <GiAchievement className="achievement-icon" />
         </div>
@@ -25,6 +28,5 @@ function Achievement(props) {
     console.log(err);
   }
 }
-import { useEffect, useState } from "react";
 
 export default Achievement;
