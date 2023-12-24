@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-import picture from "../../assets/project.jpg";
 import "./style/Certificate.css";
 import { BsFillAwardFill, BsFullscreen } from "react-icons/bs";
 

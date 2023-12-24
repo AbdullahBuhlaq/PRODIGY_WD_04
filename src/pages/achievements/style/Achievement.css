@@ -112,6 +112,7 @@
     opacity: .5;
     transform: translateY(-140%);
     transition: all 600ms ease-in-out;
+    color: white;
     background-color: rgba(0, 0, 0, .7);
     cursor: pointer;
 }
