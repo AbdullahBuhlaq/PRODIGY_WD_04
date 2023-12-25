@@ -114,7 +114,7 @@
     display: flex;
     justify-content: space-between;
     gap: 1rem;
-    background-color: var(--color-bg);
+    backdrop-filter: blur(20px);
     border-radius: 5px;
     padding: 0.5rem;
 }
