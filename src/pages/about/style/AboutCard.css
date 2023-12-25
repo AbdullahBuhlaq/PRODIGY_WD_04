@@ -26,6 +26,8 @@
 .about-card small {
     font-size: 0.7rem;
     color: var(--color-light);
+    display: inline-block;
+    width: max-content;
 }
 
 .about-content p {

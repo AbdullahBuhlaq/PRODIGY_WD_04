@@ -1,6 +1,8 @@
 .btn {
     width: max-content;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--color-primary);
     padding: 0.75rem 1.2rem;
     border-radius: 0.4rem;
@@ -8,15 +10,41 @@
     border: 1px solid var(--color-primary);
     transition: var(--transition);
     white-space: nowrap;
+    height: 2.5rem;
 }
 
 .btn:hover {
     background: var(--color-white);
     color: var(--color-bg);
-    border-color: transparen t;
+}
+
+.btn:disabled {
+    background-color: initial;
+    opacity: .5;
 }
 
 .btn-primary {
     background: var(--color-primary);
     color: var(--color-bg);
+}
+
+.wait-circle {
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    border: 2px solid var(--color-white);
+    border-width: 0 0 2px 2px;
+    border-radius: 50%;
+    animation: wait-circle-rotate 2s linear infinite;
+}
+
+@keyframes wait-circle-rotate {
+    from {
+        transform: rotate(0deg);
+        transition: var(--transition);
+    }
+
+    from {
+        transform: rotate(360deg);
+        transition: var(--transition);
+    }
 }

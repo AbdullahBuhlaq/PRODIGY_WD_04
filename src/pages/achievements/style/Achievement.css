@@ -124,3 +124,13 @@
 .achievement-item:hover .open-achievement-image {
     transform: translateY(0%);
 }
+
+
+
+/* ======= media md ========================================= */
+
+@media screen and (max-width: 750px) {
+    .achievement-details .achievement-describe {
+        font-size: 9px;
+    }
+}

@@ -1,6 +1,10 @@
 .site-options {
     position: absolute;
     padding: 10px;
+    display: flex;
+    gap: .2rem;
+    width: 100%;
+    cursor: pointer;
 }
 
 .site-options div {
@@ -11,11 +15,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    overflow: hidden;
+}
+
+.site-options div:not(.logo) {
     background: var(--color-blur);
     backdrop-filter: blur(20px);
     border-radius: 50%;
     padding: 0.5rem;
-    overflow: hidden;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.logo img {
+    width: 100%;
+    filter: drop-shadow(2px 2px 2px black);
+    height: auto;
+    cursor: pointer;
+}
+
+.site-options .language {
+    font-size: 14px;
+    overflow: visible;
 }
 
 .site-options-icon {
@@ -51,4 +75,55 @@
     transform: rotate(-90deg);
     transform-origin: 50% 200%;
     transition: all 1s ease;
+}
+
+.language-options {
+    position: absolute;
+    top: calc(100% + 10px);
+    flex-direction: column;
+    width: max-content;
+    right: 0;
+    display: flex;
+    gap: .5rem;
+    background: var(--color-blur);
+    backdrop-filter: blur(20px);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    transform: scaleY(0);
+    transition: var(--transition);
+    transform-origin: 0 0;
+}
+
+.language-options.show {
+    transform: scaleY(100%);
+    transition: var(--transition);
+}
+
+.language-options::after {
+    content: '';
+    position: absolute;
+    right: 20px;
+    top: -5px;
+    border: 5px solid;
+    border-color: transparent transparent var(--color-blur) var(--color-blur);
+    transform: rotate(135deg);
+}
+
+.language-option {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: var(--color-bg);
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+.language-option:hover {
+
+    background-color: var(--color-bg-variant);
+
+}
+
+.language-option span {
+    display: block;
 }

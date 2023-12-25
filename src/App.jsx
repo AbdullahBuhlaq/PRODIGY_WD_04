@@ -18,6 +18,7 @@ import SiteOptions from "./components/layout/siteOptions/SiteOptions";
 import Certificates from "./pages/certificates/Certificates";
 import Achievements from "./pages/achievements/Achievements";
 import Skills from "./pages/skills/Skills";
+import Footer from "./components/layout/footer/Footer";
 
 function App() {
   try {
@@ -36,7 +37,7 @@ function App() {
     return (
       <>
         <ToastContainer />
-        <SiteOptions />
+        <SiteOptions setLanguage={setLanguage} language={language} />
         <Header language={language} />
         <Navbar />
         <About language={language} />
@@ -47,7 +48,7 @@ function App() {
         {/* <Services language={language} /> */}
         <Portfolio language={language} />
         <Contact language={language} toast={toast} />
-        <Testimonials language={language} />
+        <Footer language={language} />
       </>
     );
   } catch (err) {

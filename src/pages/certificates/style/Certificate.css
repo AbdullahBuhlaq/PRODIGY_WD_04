@@ -81,3 +81,13 @@
 .certificate-item:hover .open-certificate-image {
     transform: translateY(0%);
 }
+
+
+
+/* ======= media md ========================================= */
+
+@media screen and (max-width: 1024px) {
+    .certificate-details div {
+        font-size: 14px;
+    }
+}

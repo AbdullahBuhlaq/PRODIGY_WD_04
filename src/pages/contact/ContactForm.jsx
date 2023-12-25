@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import Input from "../../components/form/input/Input";
 import TextArea from "../../components/form/textarea/TextArea";
 import emailjs from "emailjs-com";
@@ -7,21 +7,25 @@ import SubmitButton from "../../components/form/submitButton/SubmitButton";
 function ContactForm(props) {
   try {
     const form = useRef();
+    const [duringSend, setDuringSend] = useState(false);
 
     const sendEmail = (e) => {
       e.preventDefault();
 
+      setDuringSend(true);
       emailjs.sendForm("my_portfolio", "template_bgz69g9", form.current, "SYZ60ke8yXBKT3aFB").then(
         (result) => {
           if (result.text == "OK" || result.status == 200)
             props.toast.success("Message Have Been Sent Successfuly", {
               position: props.toast.POSITION.TOP_CENTER,
             });
+          setDuringSend(false);
         },
         (error) => {
           props.toast.error(error.text, {
             position: props.toast.POSITION.TOP_CENTER,
           });
+          setDuringSend(false);
         }
       );
 
@@ -33,7 +37,7 @@ function ContactForm(props) {
           <Input type={"text"} name="name" placeholder={"Your Full Name"} required={true} />
           <Input type={"email"} name="email" placeholder={"Your Email"} required={true} />
           <TextArea name={"message"} rows={"7"} placeholder={"Your Message"} required={true} />
-          <SubmitButton content={"Send Message"} />
+          <SubmitButton disabled={duringSend} content={"Send Message"} />
         </form>
       </>
     );
