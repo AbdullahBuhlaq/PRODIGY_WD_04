@@ -1,10 +1,11 @@
 .site-options {
-    position: absolute;
+    /* position: absolute; */
     padding: 10px;
     display: flex;
     gap: .2rem;
-    width: 100%;
     cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .site-options div {
@@ -15,8 +16,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     overflow: hidden;
+    z-index: 99;
 }
 
 .site-options div:not(.logo) {
@@ -126,4 +127,12 @@
 
 .language-option span {
     display: block;
+}
+
+/* ======== medias sm ================================================ */
+
+@media screen and (max-width: 600px) {
+    .site-options {
+        width: 100%;
+    }
 }

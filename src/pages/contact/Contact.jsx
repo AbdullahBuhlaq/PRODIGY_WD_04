@@ -1,6 +1,7 @@
 import DICTIONARY from "../../data/dictionary/Dictionary";
 import ContactForm from "./ContactForm";
 import ContactOption from "./ContactOption";
+import SOCIAL_CONTACT from "./data/SocialContact";
 import "./style/Contact.css";
 
 function Contact(props) {
@@ -13,7 +14,9 @@ function Contact(props) {
 
           <div className="container contact-container">
             <div className="contact-options">
-              <ContactOption />
+              {SOCIAL_CONTACT.map((item, index) => {
+                return <ContactOption key={index} item={item} />;
+              })}
             </div>
             <ContactForm toast={props.toast} />
           </div>

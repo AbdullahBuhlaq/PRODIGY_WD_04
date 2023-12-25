@@ -12,7 +12,7 @@ function SiteOptions(props) {
 
     return (
       <>
-        <div className="site-options">
+        <div className="site-options container">
           <div className="logo">
             <img src={logo} alt="Abdullah Buhlaq" />
           </div>
